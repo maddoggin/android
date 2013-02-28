@@ -247,7 +247,7 @@
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" revision ="master" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" revision ="master" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" revision="master" />
-  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" remote="md" revision="jbdev" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="md" revision="jbdev" />
   <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" revision="master" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" revision="master" />
   <project path="hardware/qcom/media" name="hardware_qcom_media" remote="md" revision="jbdev" />
@@ -261,7 +261,7 @@
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" revision="master" />
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" revision="master" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" revision="master" />
-  <project path="libcore" name="platform/libcore" remote="md" revision="jbdev" />
+  <project path="libcore" name="platform_libcore" remote="md" revision="jbdev" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />

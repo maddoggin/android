@@ -2,19 +2,14 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com" />
+           fetch=".."
+           review="https://android-review.googlesource.com/" />
 
   <remote  name="md"
            fetch="git://github.com/maddoggin/" />
 
   <remote  name="cm"
            fetch="git://github.com/CyanogenMod/" />
-
-  <remote  name="cfx"
-           fetch="https://bitbucket.org/codefirex/" />
-
-  <remote  name="linaro-android"
-           fetch="git://android.git.linaro.org" />
 
   <default revision="refs/tags/android-4.2.2_r1"
            remote="aosp"
@@ -33,7 +28,7 @@
   <project path="android" name="android" remote="md" revision="jbdev" />
 
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="bionic" name="bionic" remote="cfx" revision="jb-devel" />
+  <project path="bionic" name="platform_bionic" remote="md" revision="jbmr1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
@@ -71,7 +66,7 @@
   <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/busybox" name="external_busybox" remote="cfx" revision="jb-devel" />
+  <project path="external/busybox" name="external_busybox" remote="md" revision="jb-mr1" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
   <project path="external/chromium" name="external_chromium" remote="md" revision="jbdev" />
@@ -157,7 +152,7 @@
   <project path="external/markdown" name="platform/external/markdown" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
   <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk" />
-  <project path="external/mksh" name="platform/external/mksh" groups="pdk" revison="master" />
+  <project path="external/mksh" name="platform/external/mksh" remote="aosp" revison="master" />
   <project path="external/mockwebserver" name="platform/external/mockwebserver" />
   <project path="external/mp4parser" name="platform/external/mp4parser" />
   <project path="external/mtpd" name="platform/external/mtpd" />
@@ -174,7 +169,7 @@
   <project path="external/openssl" name="external_openssl" remote="md" revision="jbdev" />
   <project path="external/oprofile" name="external_oprofile" remote="md" revision="jbdev" />
   <project path="external/ping" name="external_ping" remote="md" revision="jbdev" />
-  <project path="external/ping6" name="external_ping6" />
+  <project path="external/ping6" name="platform/external/ping6" />
   <project path="external/ppp" name="platform/external/ppp" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk-java" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" />
@@ -185,7 +180,7 @@
   <project path="external/replicaisland" name="platform/external/replicaisland" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/sepolicy" name="platform/external/sepolicy" />
-  <project path="external/skia" name="external_skia" remote="cfx" revision="jb-devel" />
+  <project path="external/skia" name="external_skia" remote="md" revision="jbdev" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
@@ -216,11 +211,11 @@
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="frameworks_av" remote="md" revision="jbdev" />
   <project path="frameworks/base" name="platform_frameworks_base" remote="md" revision="jbdev" />
-  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" remote="linaro-android" revision="linaro_android_4.2.2" />
+  <project path="frameworks/compile/libbcc" name="frameworks_compile_libbcc" remote="md" revision="jbdev" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" groups="pdk" />
   <project path="frameworks/compile/llvm-ndk-cc" name="platform/frameworks/compile/llvm-ndk-cc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="frameworks_compile_mclinker" remote="md" revision="jbdev" />
-  <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" remote="linaro-android" revision="linaro_android_4.2.2" />
+  <project path="frameworks/compile/slang" name="frameworks_compile_slang" remote="md" revision="jbdev" />
   <project path="frameworks/ex" name="frameworks_ex" remote="md" revision="jbdev" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />

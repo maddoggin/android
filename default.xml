@@ -50,7 +50,7 @@
   <project path="device/samsung/tuna" name="device/samsung/tuna" groups="device,tuna" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
-  <project path="external/android-clat" name="platform/external/android-clat" />
+  <project path="external/android-clat" name="platform/external/android-clat" revision="master" />
   <project path="external/android-mock" name="platform_external_android-mock" remote="md" revision="jbmr1" />
   <project path="external/ant-glob" name="platform/external/ant-glob" />
   <project path="external/antlr" name="platform/external/antlr" />
@@ -121,7 +121,7 @@
   <project path="external/jsilver" name="platform/external/jsilver" />
   <project path="external/jsr305" name="platform/external/jsr305" />
   <project path="external/junit" name="platform/external/junit" />
-  <project path="external/kernel-headers" name="platform/external/kernel-headers" />
+  <project path="external/kernel-headers" name="platform/external/kernel-headers" revision="master" />
   <project path="external/libcap-ng" name="platform/external/libcap-ng" />
   <project path="external/libffi" name="platform/external/libffi" />
   <project path="external/libgsm" name="platform/external/libgsm" />
